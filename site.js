@@ -1,5 +1,5 @@
-const API_KEY = "7807df6793fa3a22acd926c3c7286acb"
-const CITY_ID = "5329408"
+const API_KEY = 'API KEY'
+const CITY_ID = "CITY ID"
 
 function getTopPost() {
   const EP = `https://www.reddit.com/r/EarthPorn/hot/.json?limit=3;raw_json=1`
