@@ -1,5 +1,5 @@
-const API_KEY = 'API KEY'
-const CITY_ID = "CITY ID"
+const API_KEY = 'PUT API KEY HERE'
+const CITY_ID = 'PUT CITY ID HERE'
 
 function getTopPost() {
   const EP = `https://www.reddit.com/r/EarthPorn/hot/.json?limit=3;raw_json=1`
@@ -74,7 +74,7 @@ function getWeather() {
   fetch(request)  
     .then(response => response.json())
     .then(data => {
-        temp.innerHTML = Math.trunc(data['main']['temp']) + "&#176;F " + "&nbsp" + data['weather'][0]['main']
+        temp.innerHTML = Math.trunc(data['main']['temp']) + "&#176;F " + "&nbsp" + data['weather'][0]['main'] + "&nbsp"
         icon.src = `https://openweathermap.org/img/wn/${data['weather'][0]['icon']}@2x.png`
       })
 }
@@ -85,11 +85,11 @@ function getTime() {
   var days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
 
   var dt = new Date()
-  var hours = pad(dt.getHours())
+  var hours = (dt.getHours() % 12 == 0) ? pad(12) : pad(dt.getHours() % 12)
   var mins = pad(dt.getMinutes())
   var sec = pad(dt.getSeconds())
   var ampm = (dt.getHours() / 12 >= 1) ? "PM" : "AM"
-  var month = dt.getMonth() + 1
+  var month = pad(dt.getMonth() + 1)
   var numDate = pad(dt.getDate())
   var year = dt.getFullYear()
   

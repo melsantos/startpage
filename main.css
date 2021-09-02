@@ -4,9 +4,12 @@
 }
 
 body {
-    background: rgb(0, 0, 0);
-    /* background: linear-gradient(90deg, rgba(62,88,87,1) 0%, rgba(69,108,108,1) 35%, rgba(0,55,66,1) 100%); */
+    background-color: black;
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
 }
 
 #bg {
@@ -34,9 +37,10 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 30vh;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; 
     opacity: 0;
+    align-self: center;
+    /* height: 100vh; */
 }
 
 #weather {
@@ -44,6 +48,9 @@ body {
     grid-column-start: 2;
     justify-self: center;
     max-height: 3rem;
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 30px;
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 #greeting {
@@ -69,4 +76,41 @@ body {
 
 #time {
     font-size: 2.5rem;
+}
+
+#outgoing {
+    grid-column-start: 2;
+    text-align: center;
+    align-items: center;
+    width: 50vw;
+    height: 200px;
+}
+
+#searchBar {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+}
+
+#query {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 1pt solid;
+    outline: none;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+li > a::hover {
+    text-decoration: none;
 }
