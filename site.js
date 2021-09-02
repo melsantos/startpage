@@ -35,7 +35,7 @@ function changeBackground(post) {
   unblur(bg, 20)
   setTimeout(function() {
     unfade(content, 5)
-  }, 725)
+  }, 750)
 }
 
 
