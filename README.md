@@ -4,3 +4,4 @@ A custom startpage in progress
 ## Features
  + Changing background taken from [r/EarthPorn](https://www.reddit.com/r/EarthPorn)
  + Up to date and current weather [OpenWeather](https://openweathermap.org/)
+ + Icons from [FontAwesome](https://fontawesome.com/)
