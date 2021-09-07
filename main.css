@@ -55,6 +55,7 @@ body {
 #weather {
     display: block;
     grid-column-start: 2;
+    grid-row: 4;
     justify-self: center;
     max-height: 3rem;
     background-color: rgba(255, 255, 255, 0.164);
@@ -69,6 +70,7 @@ body {
 
 #dt{
     grid-column-start: 2;
+    grid-row: 2;
     text-align: center;
 }
 
@@ -89,10 +91,10 @@ body {
 
 #outgoing {
     grid-column-start: 2;
+    grid-row: 3;
     text-align: center;
     align-items: center;
     width: 50vw;
-    height: 200px;
 }
 
 #searchBar {
@@ -108,6 +110,10 @@ body {
     border-bottom: 1pt solid;
     outline: none;
     text-align: center;
+}
+
+#links {
+    font-size: 2rem;
 }
 
 #credit {
