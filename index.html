@@ -4,10 +4,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/weather-icons.min.css">
     <script src="https://kit.fontawesome.com/1905ea00c4.js" crossorigin="anonymous"></script>
+    <script src="js/odometer.min.js"></script>
+    <link rel="stylesheet" href="css/odometer-theme-default.css" />    
 
-    <link rel="stylesheet" href="main.css">
-    <script src="site.js" async></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/site.js" async></script>
 </head>
 
 <body>
@@ -24,7 +27,7 @@
                 </div>
             </div>
             <div id="weather"> 
-                <img id="weather_icon" src="default_weather.png" alt="weather icon">
+                <span id="weather_icon"><i class="wi wi-night-sleet"></i></span> &nbsp
                 <span id="temp">test</span> 
             </div>
             <div id="outgoing">
@@ -33,17 +36,22 @@
                         <input type="text" id="query" name="q" placeholder="search" autofocus>
                     </form>
                 </div>
-                <ul id = "links">
+                <ul id="links">
                     <li><a href="https://www.reddit.com/"><i class="fab fa-reddit"></i></a></li>
                     <li><a href="https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwicqpXFguHyAhUGWs0KHdMbD0gQPQgJ"><i class="fab fa-google"></i></a></li>
                     <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.twitch.tv/"><i class="fab fa-twitch"></i></a></li>
                     <li><a href="https://github.com"><i class="fab fa-github"></i></a></li>
-                    <!-- <li><a href="https://leetcode.com/">LeetCode</a></li> -->
                     <li><a href="https://www.hackerrank.com"><i class="fab fa-hackerrank"></i></a></li>
                 </ul>
             </div>
+            <div id="tracker" hidden>
+                <div style="font-size: 1.5rem;"><b>COVID-19</b></div>
+                <span><span class="odometer" id="cases">420</span> new cases</span>
+            </div>
             <footer>
-                <a id="credit" href="#">Photo Credit: reddit.com/r/EarthPorn</a>
+                <a class="footerText" href="https://github.com/melsantos/startpage">Check out this project!</a> <br/>
+                <a class="footerText" id="credit" href="#">Photo Credit: reddit.com/r/EarthPorn</a> 
             </footer>
         </div>
     </div>

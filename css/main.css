@@ -14,12 +14,43 @@ body {
     padding: 0;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+li > a {
+    text-decoration: none;
+    opacity: 70%;
+}
+
+li > a:hover {
+    opacity: 100%;
+}
+
+footer {
+    font-size: 0.6rem;
+    opacity: 20%;  
+
+    text-align: right;
+    grid-area: 5 / 3 / end / last-line;
+    align-self: end;
+    padding-right: 5px;
+}
+
+footer > a {
+    text-decoration: none;
+}
+
 #bg {
-    /* background-image: url('default.png'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
     
     height: 101vh;
     width: 101vw;
@@ -58,9 +89,9 @@ body {
     grid-row: 4;
     justify-self: center;
     max-height: 3rem;
-    background-color: rgba(255, 255, 255, 0.164);
+    font-size: 2rem;
     border-radius: 30px;
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 #greeting {
@@ -75,12 +106,11 @@ body {
 }
 
 #temp {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: inline;
 }
 
 #weather_icon {
-    max-height: inherit;
     vertical-align: middle;
 }
 
@@ -116,38 +146,26 @@ body {
     font-size: 2rem;
 }
 
-#credit {
+#projectLink {
     font-size: 0.6rem;
     opacity: 20%;  
     text-decoration: none;
+    grid-area: 6 / 1 / 7 / 2;
+    align-self: end;
+    text-align: left;
 }
 
-#credit:hover {
+#projectLink:hover {
     opacity: 60%;
 }
 
-footer {
-    text-align: right;
-    grid-area: 5 / 3 / end / last-line;
-    align-self: end;
-    padding-right: 5px;
+#tracker {
+    align-self: flex-start;
+    text-align: left;
+    padding-left: 2vh;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-}
-
-li > a {
-    text-decoration: none;
-    opacity: 70%;
-}
-
-li > a:hover {
-    opacity: 100%;
+.footerText:hover {
+    opacity: 60%;
 }
